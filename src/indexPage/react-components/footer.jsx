@@ -108,7 +108,7 @@ const Footer = () => (
                             {translate('In the rest of the EU, Volatility Indices are offered by Binary (Europe) Ltd., W Business Centre, Level 3, Triq Dun Karm, Birkirkara, BKR 9033, Malta; licensed and regulated by (1) the Malta Gaming Authority in Malta (licence no. MGA/B2C/102/2000 issued on 01 August 2018), for UK clients by (2) the UK Gambling Commission (licence {$0}reference no: 39495{$1}), and for Irish clients by (3) the Revenue Commissioners in Ireland (Remote Bookmaker\'s Licence no. 1010285 issued on 1 July 2017). View complete {$2}Regulatory Information{$1}.', 
                                 ['<a href="https://secure.gamblingcommission.gov.uk/PublicRegister/Search/Detail/39495" target="_blank" rel="noopener noreferrer">',
                                     '</a>', 
-                                    `<a href="${createUrl({ path: 'regulation', addLanguage: true, addHtmlExtension: true, isNonBotPage: true })}">`
+                                    `<a href="${createUrl({ path: 'regulation', addLanguage: true, addHtmlExtension: true, isNonBotPage: true })}"` `</a>`,
                                 ]
                             )}
                         </p>
@@ -139,7 +139,7 @@ const Footer = () => (
                 </div>
             </div>
         </div>
-        <div id='end-note' className='invisible content-inverse-color center-text' />
+        <div id='endnote' className='invisible content-inverse-color center-text' />
     </div>
 );
 
